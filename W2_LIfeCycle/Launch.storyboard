@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tmK-2s-7PE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LaunchVC-->
+        <scene sceneID="4gD-Po-SUi">
+            <objects>
+                <viewController storyboardIdentifier="LaunchVC" id="tmK-2s-7PE" customClass="LaunchVC" customModule="W2_LIfeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xz-Sd-h3Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이 화면은 딱 한번만 볼 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihk-zS-KGs">
+                                <rect key="frame" x="69" y="436" width="276.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDt-RA-kWC">
+                                <rect key="frame" x="20" y="812" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="메인화면으로 가기">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="doSegue:" destination="tmK-2s-7PE" eventType="touchUpInside" id="KNs-gs-aNW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qku-KK-WNY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qku-KK-WNY" firstAttribute="trailing" secondItem="GDt-RA-kWC" secondAttribute="trailing" constant="20" id="1ss-pe-Qs2"/>
+                            <constraint firstItem="Ihk-zS-KGs" firstAttribute="centerX" secondItem="8xz-Sd-h3Z" secondAttribute="centerX" id="Eo6-43-TLt"/>
+                            <constraint firstItem="Ihk-zS-KGs" firstAttribute="centerY" secondItem="8xz-Sd-h3Z" secondAttribute="centerY" id="OJD-Uc-Yx0"/>
+                            <constraint firstItem="GDt-RA-kWC" firstAttribute="leading" secondItem="Qku-KK-WNY" secondAttribute="leading" constant="20" id="W5M-8e-QFM"/>
+                            <constraint firstItem="Qku-KK-WNY" firstAttribute="bottom" secondItem="GDt-RA-kWC" secondAttribute="bottom" constant="20" id="gOw-BH-6HG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="vEP-Bz-ky4" kind="presentation" identifier="ToMain" modalPresentationStyle="fullScreen" id="pNy-fE-CIk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weY-JV-w48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-151"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="h6u-i9-cJp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="vEP-Bz-ky4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mQe-EP-7l6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydF-4W-AGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="-151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

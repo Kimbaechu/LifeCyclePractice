@@ -16,7 +16,6 @@ func dateFormatter(_ date: Date) -> String {
 
 class MainVC: UIViewController {
     
-   
     var anyTimer: Timer?
     
     @IBOutlet weak var textField: UITextField!
@@ -48,13 +47,14 @@ class MainVC: UIViewController {
         changeLabelColor(label: viewDidAppearLabel)
     }
     
+    //textField.resignFirstResponder() 차이 확인
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         DEBUG_LOG("")
         textField.resignFirstResponder()
-        
     }
     
+    //textField.resignFirstResponder() 차이 확인
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
         DEBUG_LOG("")
@@ -92,7 +92,6 @@ class MainVC: UIViewController {
         UIView.animate(withDuration: 1, animations: {
             self.view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
         }, completion: nil)
-        
     }
     
 }
