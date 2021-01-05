@@ -92,9 +92,7 @@ class MainVC: UIViewController {
         UIView.animate(withDuration: 1, animations: {
             self.view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
         }, completion: nil)
-        label.layoutIfNeeded()
     }
-    
 }
 
 extension MainVC {
