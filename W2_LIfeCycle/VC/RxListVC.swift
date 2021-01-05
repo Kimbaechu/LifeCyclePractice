@@ -12,6 +12,8 @@ import RxCocoa
 class RxListVC: UIViewController {
     
     let disposeBag = DisposeBag()
+    
+    //기존값을 유지하면서 새로운 값 추가 가능
     var memos = BehaviorRelay<[String]>(value: [])
     var memoList = [String]()
     

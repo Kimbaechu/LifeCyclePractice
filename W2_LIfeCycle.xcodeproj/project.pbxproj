@@ -22,6 +22,7 @@
 		25FE34E625A46C850020CCA9 /* RxListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FE34E525A46C850020CCA9 /* RxListVC.swift */; };
 		25FE34E925A46C950020CCA9 /* RxAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FE34E825A46C950020CCA9 /* RxAddVC.swift */; };
 		25FE34EC25A46CEF0020CCA9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FE34EB25A46CEF0020CCA9 /* Model.swift */; };
+		25FE34FF25A489530020CCA9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FE34FE25A489530020CCA9 /* TableViewCell.swift */; };
 		53B1994A805BB92FF3099A57 /* Pods_W2_LIfeCycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6989DFE3B87DAA5019D0141 /* Pods_W2_LIfeCycle.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		25FE34E525A46C850020CCA9 /* RxListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListVC.swift; sourceTree = "<group>"; };
 		25FE34E825A46C950020CCA9 /* RxAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAddVC.swift; sourceTree = "<group>"; };
 		25FE34EB25A46CEF0020CCA9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		25FE34FE25A489530020CCA9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6C277C56FBAD04BE813394F5 /* Pods-W2_LIfeCycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W2_LIfeCycle.release.xcconfig"; path = "Target Support Files/Pods-W2_LIfeCycle/Pods-W2_LIfeCycle.release.xcconfig"; sourceTree = "<group>"; };
 		82DFBC545DC3A061A693BA5D /* Pods-W2_LIfeCycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W2_LIfeCycle.debug.xcconfig"; path = "Target Support Files/Pods-W2_LIfeCycle/Pods-W2_LIfeCycle.debug.xcconfig"; sourceTree = "<group>"; };
 		C6989DFE3B87DAA5019D0141 /* Pods_W2_LIfeCycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_W2_LIfeCycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				253FCE1D25A440AA0015AFA6 /* LaunchVC.swift */,
 				25FE34E525A46C850020CCA9 /* RxListVC.swift */,
 				25FE34E825A46C950020CCA9 /* RxAddVC.swift */,
+				25FE34FE25A489530020CCA9 /* TableViewCell.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				253FCE1E25A440AA0015AFA6 /* LaunchVC.swift in Sources */,
 				25FE34E625A46C850020CCA9 /* RxListVC.swift in Sources */,
 				25FE34EC25A46CEF0020CCA9 /* Model.swift in Sources */,
+				25FE34FF25A489530020CCA9 /* TableViewCell.swift in Sources */,
 				2591911F25A3538B00AF7E3D /* SceneDelegate.swift in Sources */,
 				2591913725A3DF5F00AF7E3D /* RedVC.swift in Sources */,
 			);

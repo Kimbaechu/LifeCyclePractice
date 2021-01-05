@@ -86,12 +86,13 @@ class MainVC: UIViewController {
         let alpha = CGFloat(1.0)
 
         UIView.animate(withDuration: 1, animations: {
-            label.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
+            label.layer.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha).cgColor
         }, completion:nil)
         
         UIView.animate(withDuration: 1, animations: {
             self.view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: alpha)
         }, completion: nil)
+        label.layoutIfNeeded()
     }
     
 }
