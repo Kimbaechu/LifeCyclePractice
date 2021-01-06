@@ -29,7 +29,6 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         DEBUG_LOG("")
         changeLabelColor(label: viewDidLoadLabel)
-        print(Date())
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +51,7 @@ class MainVC: UIViewController {
         super.viewWillDisappear(true)
         DEBUG_LOG("")
         textField.resignFirstResponder()
+//        textField.text = nil
     }
     
     //textField.resignFirstResponder() 차이 확인
@@ -97,7 +97,6 @@ class MainVC: UIViewController {
 
 extension MainVC {
  
-    
     func startTimer() {
         anyTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timer), userInfo: nil, repeats: true)
     }

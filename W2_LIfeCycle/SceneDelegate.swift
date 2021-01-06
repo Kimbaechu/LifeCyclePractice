@@ -72,6 +72,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         DEBUG_LOG(dateFormatter(Date()))
         UserDefaults.shared.setValue(dateFormatter(Date()) ,forKey: "BackgroundDate")
+        
     }
     
     
