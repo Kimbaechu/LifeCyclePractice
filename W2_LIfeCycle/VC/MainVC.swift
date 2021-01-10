@@ -28,6 +28,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DEBUG_LOG("")
+        //초기 UI설정
         changeLabelColor(label: viewDidLoadLabel)
     }
     

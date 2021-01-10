@@ -572,6 +572,7 @@
                         <segue destination="tlR-cy-9Ta" kind="relationship" relationship="viewControllers" id="M8x-5D-8KZ"/>
                         <segue destination="8TF-e0-PMR" kind="relationship" relationship="viewControllers" id="q7c-wn-fL1"/>
                         <segue destination="qfs-i7-JXh" kind="relationship" relationship="viewControllers" id="QPT-D8-UBD"/>
+                        <segue destination="0eG-oX-r9A" kind="relationship" relationship="viewControllers" id="MOv-aw-nJl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rd5-xt-Nph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -635,8 +636,64 @@
             </objects>
             <point key="canvasLocation" x="898.55072463768124" y="1935.9375"/>
         </scene>
+        <!--View-->
+        <scene sceneID="XOK-ec-hly">
+            <objects>
+                <viewController id="0eG-oX-r9A" customClass="AnimationVC" customModule="W2_LIfeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMc-Ma-sra">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-Ao-1iT">
+                                <rect key="frame" x="202" y="443" width="10" height="10"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="ROh-5g-Q5w"/>
+                                    <constraint firstAttribute="width" secondItem="rCh-Ao-1iT" secondAttribute="height" multiplier="1:1" id="kFr-NM-sQx"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="yQH-dm-96R">
+                                <rect key="frame" x="155" y="44" width="104" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKX-fh-FYU">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
+                                        <state key="normal" title="reset"/>
+                                        <connections>
+                                            <action selector="reset:" destination="0eG-oX-r9A" eventType="touchUpInside" id="W4N-Eg-H3f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3a-Pd-Idi">
+                                        <rect key="frame" x="58" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="restart"/>
+                                        <connections>
+                                            <action selector="restart:" destination="0eG-oX-r9A" eventType="touchUpInside" id="89b-d9-f88"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lni-fZ-lc9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rCh-Ao-1iT" firstAttribute="centerX" secondItem="NMc-Ma-sra" secondAttribute="centerX" id="BqB-oQ-lIR"/>
+                            <constraint firstItem="yQH-dm-96R" firstAttribute="top" secondItem="lni-fZ-lc9" secondAttribute="top" id="Tv5-JQ-J6u"/>
+                            <constraint firstItem="rCh-Ao-1iT" firstAttribute="centerY" secondItem="NMc-Ma-sra" secondAttribute="centerY" id="Z3Y-9s-K0K"/>
+                            <constraint firstItem="yQH-dm-96R" firstAttribute="centerX" secondItem="NMc-Ma-sra" secondAttribute="centerX" id="aVf-Ve-iRf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="View" image="circle.fill" catalog="system" id="zkv-0K-nMQ"/>
+                    <connections>
+                        <outlet property="redView" destination="rCh-Ao-1iT" id="lcJ-ba-j7z"/>
+                        <outlet property="redWidthConstraint" destination="ROh-5g-Q5w" id="RN3-eS-bG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jj-bf-Cfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="2716"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>

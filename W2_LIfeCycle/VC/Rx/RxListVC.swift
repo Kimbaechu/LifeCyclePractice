@@ -37,7 +37,7 @@ extension RxListVC: UITableViewDelegate, UITableViewDataSource {
         if let vc = segue.destination as? RxAddVC {
             vc.memoSubjectObservable
                 .subscribe(onNext: { [weak self] memo in
-                    guard let `self` = self else { return }
+                    guard let self = self else { return }
                     
                     var existingMemo = self.memos.value
                     existingMemo.append(memo)

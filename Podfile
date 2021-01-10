@@ -8,4 +8,6 @@ target 'W2_LIfeCycle' do
   # Pods for W2_LIfeCycle
     pod 'RxSwift'
     pod 'RxCocoa'
+
+
 end
